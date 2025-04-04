@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moamen Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #FFFAF0;
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    .navbar {
+      background: linear-gradient(90deg, #29B6F6, #4FC3F7);
+    }
+
+    .navbar-brand {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #fff !important;
+    }
+
+    .nav-link {
+      color: #fff !important;
+      margin: 0 10px;
+      transition: color 0.3s;
+    }
+
+    .nav-link:hover {
+      color: #FFE082 !important;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #87CEFA, #ADD8E6);
+      text-align: center;
+      padding: 20px;
+      animation: fadeInHeader 2s ease-in-out;
+    }
+
+    @keyframes fadeInHeader {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      object-fit: cover;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 20px 0;
+      color: #fff;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin: 10px 0;
+      color: #fff;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    }
+
+    .btn-discover {
+      background: #fff;
+      color: #333;
+      border: none;
+      padding: 10px 20px;
+      transition: background 0.3s;
+    }
+
+    .btn-discover:hover {
+      background: #FFE082;
+    }
+
+    section {
+      padding: 60px 0;
+      text-align: center;
+      animation: fadeInSection 1s ease-in-out;
+    }
+
+    @keyframes fadeInSection {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .bg-cheerful {
+      background: linear-gradient(135deg, #BBDEFB, #E1F5FE);
+      color: #333;
+    }
+
+    .bg-light-cheer {
+      background: #E3F2FD;
+      color: #333;
+    }
+
+    footer {
+      background: #29B6F6;
+      padding: 20px 0;
+      text-align: center;
+      color: #fff;
+      font-size: 0.9rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: #FF8A65;
+    }
+
+    .container {
+      max-width: 1140px;
+      margin: auto;
+      padding: 0 15px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">Moamen</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="cofounder.html" target="_blank">Co-Founder of Syntax Error
+              Team</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header id="home">
+    <img src="test.jpg" alt="Moamen">
+    <h1>Moamen Mohammed Mostafa</h1>
+    <p>Computer Science Student | Professional Programmer | Innovation Enthusiast</p>
+    <a href="#about" class="btn btn-discover mt-3">Discover More</a>
+  </header>
+  <section id="about" class="bg-cheerful">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Third-year Computer Science student my GPA is 3.9 , with a passion for programming, problem solving, and software development.
+        I thrive on challenges that inspire creativity and innovation.</p>
+    </div>
+  </section>
+  <section id="skills" class="bg-light-cheer">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Programming Languages</h3>
+          <ul class="list-unstyled">
+            <li>Java</li>
+            <li>C++</li>
+            <li>Dart</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h3>Technical Expertise</h3>
+          <ul class="list-unstyled">
+            <li>Object-Oriented Programming (OOP)</li>
+            <li>Design Patterns</li>
+            <li>Data Structures and Algorithms</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="projects" class="bg-cheerful">
+    <div class="container">
+      <h2>Projects &amp; Achievements</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Contacts Desktop App</h3>
+          <p>A fully functional phonebook application for efficient contact management.</p>
+        </div>
+        <div class="col-md-6">
+          <h3>Airplane Reservation System</h3>
+          <p>A simulation system for managing airplane reservations and scheduling.</p>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <h3>Calculator Application</h3>
+          <p>A user-friendly calculator with advanced functionalities.</p>
+        </div>
+        <div class="col-md-6">
+          <h3>Codeforces Accounts</h3>
+          <p><a href="https://codeforces.com/profile/MoamenZ" class="text-primary" target="_blank">MoamenZ</a></p>
+          <p><a href="https://codeforces.com/profile/Syntax_Error_Team" class="text-primary"
+              target="_blank">Syntax_Error_Team</a></p>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-12">
+          <h3>Founder of <a href="https://sytnax-error.vercel.app/" target="_blank" class="text-primary">Syntax Error
+              Team</a></h3>
+          <p>
+            <img src="pixelcut-export.png" alt="Syntax Error Logo" width="100" height="100"
+              style="border-radius:50%;border:3px solid #fff;"><br>
+            Established a programming team dedicated to offering beginner courses with remarkable success and
+            recognition.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="bg-light-cheer">
+    <div class="container">
+      <h2>Contact</h2>
+      <p><strong>Phone:</strong> +20 1080636980</p>
+      <p><strong>Email:</strong> <a href="mailto:moamengebril5@gmail.com">moamengebril5@gmail.com</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/moamen-gebril-b3791226b"
+          target="_blank">linkedin.com/in/moamen-gebril-b3791226b</a></p>
+      <p><strong>Location:</strong> Tanta, Gharbia Governorate, Egypt</p>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Moamen Mohammed Mostafa. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
